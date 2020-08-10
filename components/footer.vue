@@ -71,7 +71,7 @@ strong a{
     text-decoration: none;
 }
 .theme--dark.v-footer{
-    background-color: #0096a1 !important;
+    background-color: #0096a9 !important;
 }
 .v-bottom-navigation{
 
