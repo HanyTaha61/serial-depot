@@ -4,7 +4,11 @@
 
 <script>
 export default {
-    
+  head(){
+    return{
+      title: 'Serial Depot | About'
+    }
+  }  
 }
 </script>
 

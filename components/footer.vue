@@ -3,32 +3,35 @@
     <v-footer
       padless
     >
+          <v-container>
       <v-card
         flat
         tile
         width="100%"
         class="lighten-1 text-center"
       >
-        <v-card-text>
+        <v-card-text class="d-none d-sm-block">
          <v-bottom-navigation
+        
             grow
-            color="yellow"
+            color=""
         >
-            <v-btn><nuxt-link to="/">Home</nuxt-link></v-btn>
-            <v-btn><nuxt-link to="/download">Download</nuxt-link></v-btn>
-            <v-btn><nuxt-link to="/install">Install</nuxt-link></v-btn>
-            <v-btn><nuxt-link to="/install">Activate</nuxt-link></v-btn>
-            <v-btn><nuxt-link to="/install">About</nuxt-link></v-btn>
-            <v-btn><nuxt-link to="/install">Contact</nuxt-link></v-btn>
+              <v-btn class="px-0"><nuxt-link exact to="/">Home</nuxt-link></v-btn>
+              <v-btn class="px-0"><nuxt-link to="/download">Download</nuxt-link></v-btn>
+              <v-btn class="px-0"><nuxt-link to="/install">Install</nuxt-link></v-btn>
+              <v-btn class="px-0"><nuxt-link to="/activate">Activate</nuxt-link></v-btn>
+              <v-btn class="px-0"><nuxt-link to="/about">About</nuxt-link></v-btn>
+              <v-btn class="px-0"><nuxt-link to="/contact">Contact</nuxt-link></v-btn>
         </v-bottom-navigation>
         </v-card-text>
 
-        <v-divider></v-divider>
+        <v-divider class="d-none d-sm-block"></v-divider>
 
         <v-card-text class="white--text">
          <strong><nuxt-link class="white--text" to="/">Serial Depot</nuxt-link></strong> {{ new Date().getFullYear()}}
         </v-card-text>
       </v-card>
+          </v-container>
     </v-footer>
   </v-card>
 </template>
@@ -36,19 +39,7 @@
 <script>
   export default {
     data: () => ({
-      icons: [
-        'mdi-home',
-        'mdi-email',
-        'mdi-calendar',
-        'mdi-delete',
-      ],
-      items: [
-        'default',
-        'absolute',
-        'fixed',
-      ],
-      padless: false,
-      variant: 'default',
+
     }),
     computed: {
       localAttrs () {
@@ -79,9 +70,16 @@ strong a{
 
         span{
 
-            a{
+            a, a.nuxt-link-exact-active{
                 color: aliceblue;
                 text-decoration: none;
+                width: 100%;
+                height: 100%;
+                line-height: 4.5 !important;
+            }
+            a.nuxt-link-exact-active{
+              background-color: #eee;
+              color: teal;
             }
         }
     }

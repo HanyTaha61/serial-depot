@@ -3,7 +3,7 @@
     <v-card class="mx-auto">
       <v-app-bar color="teal" dark>
         <v-toolbar-title class="mx-auto">
-          <h1>ESET NOD32 Trial Keys</h1>
+          <h1 class="ml-12">ESET NOD32 Trial Keys</h1>
         </v-toolbar-title>
       </v-app-bar>
       <v-img :src= "require('assets/home-EIS.png')" width='350' class="mx-auto"></v-img>
@@ -100,19 +100,49 @@
 export default {
   data(){
     return{
-
+      }
+  },
+  head(){
+    return{
+      title: 'Serial Depot | Home'
     }
   }
 }
 </script>
 
-<style>
+<style lang='scss'>
 .theme--dark.v-application, .theme--dark.v-card{
   background-color: unset !important;
   color: unset;
 }
-.v-toolbar__content{
-  background-color: #0096a1;
+
+.v-application--wrap{
+ 
+  .v-toolbar__content{
+    background-color: #0096a1;
+
+    .v-toolbar__title{
+
+      h1{
+        font-size: 2em;
+
+        @media (max-width: 400px) {
+          font-size: 0.8em;
+        }
+
+        @media (min-width: 401px) and (max-width: 600px) {
+          font-size: 1.25em;
+        }
+      }
+    }
+  }
+}
+
+.w-100{
+  width: 100% !important
+}
+.w-fit{
+  width: fit-content !important;
 }
 body{
   background-color: #eee;
