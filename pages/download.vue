@@ -23,17 +23,15 @@
           cols="12"
           class="mb-5 white lighten-1 "
         >
-          <v-card class="pt-5">
-          <v-img class="d-block d-sm-none mx-auto" width='150' :src="require('../assets/' + item.title + '.png')"></v-img>
+          <v-img class="d-block d-sm-none" :src="require('../assets/' + item.title + '.png')"></v-img>
+          <v-card>
             <div class="d-flex flex-no-wrap justify-start">
               <v-avatar
                 class="ma-3 d-none d-sm-block"
                 size="180"
                 tile
               >
-                <nuxt-link to="">
-                  <v-img :src="require('../assets/' + item.title + '.png')"></v-img>
-                </nuxt-link>
+                <v-img :src="require('../assets/' + item.title + '.png')"></v-img>
               </v-avatar>
               <div class="w-100">
                 <v-card-title
@@ -86,7 +84,12 @@
         target.attr({target: '_blank', 
                     href  : '../assets/sources/EIS_installer.exe'});
       }
-    }
+    },
+    head(){
+      return{
+        title: 'Serial Depot | Download'
+      }
+    } 
   }
 </script>
 
