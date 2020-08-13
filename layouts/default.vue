@@ -67,7 +67,7 @@ export default {
 				{name: 'Download ESET NOD32', to: '/download'},
 				{name: 'Install ESET NOD32', to: '/install'},
 				{name: 'Activate ESET NOD32', to: '/activate'},
-				{name: 'About Me', to: '/about'},
+				{name: 'About Us', to: '/about'},
 				{name: 'Contact Me', to: '/contact'}
 			]
 		}
