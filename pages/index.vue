@@ -111,6 +111,11 @@ export default {
 </script>
 
 <style lang='scss'>
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
 .theme--dark.v-application, .theme--dark.v-card{
   background-color: unset !important;
   color: unset;

@@ -35,7 +35,7 @@
                 tile
                 height='100%'
               >
-                  <v-img class="" :src="require('../assets/install/' +[i+1] + '.jpg')"></v-img>
+                  <v-img class="" :src="require('../assets/install/' +[i+1] + '.png')"></v-img>
               </v-avatar>
             </div>
           </v-card>

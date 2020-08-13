@@ -27,18 +27,23 @@
 						<a id="home" href="#">
 							<nuxt-link to="/"><span>Home</span></nuxt-link>
 							<nuxt-link to="/download"><span>download</span></nuxt-link>
-							<nuxt-link to="/activate"><span> activate</span></nuxt-link>
 							<nuxt-link to="/install"><span> install</span></nuxt-link>
+							<nuxt-link to="/activate"><span> activate</span></nuxt-link>
 							<nuxt-link to="/about"><span> about</span></nuxt-link>
 							<nuxt-link to="/contact"><span> contact</span></nuxt-link>
 							
 						</a>
+
+						<!-- Search functionality -->
+						<!-------------------------->
+
 						<!-- <div class="search_set">
 							<input type="search" placeholder='search...' class="search">
 							<v-btn icon>
 								<v-icon>mdi-magnify</v-icon>
 							</v-btn>
 						</div> -->
+
 					</Slide>
 					</v-col>
 				</v-row>
